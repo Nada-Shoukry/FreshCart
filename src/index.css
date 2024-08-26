@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: rgb(243, 237, 243);
+
+}
+
+ul .active {
+  @apply text-purple-400 font-bold
+}
+
+.navmenu ul .active,
+.auth-links ul .active {
+  @apply bg-purple-400 font-bold border-[1px] border-purple-400 px-2 text-white rounded-md 
+}
+
+.brand-title {
+  bottom:-100px
+}
+
+.brand-item:hover .brand-title{
+  bottom:0
+}
+
+
+
+
+
+
+
