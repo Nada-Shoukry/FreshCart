@@ -60,7 +60,7 @@ return (
             <div className='absolute top-0 right-0 mx-5 my-3 md:my-5 flex flex-col items-start w-1/2'>
               <span className='bg-yellow-300 px-1 rounded-md'>Free Shipping - Orders Over 100$</span>
               <h1 className='text-2xl lg:text-4xl xl:text-5xl text-white font-semibold my-1'>Free Shipping on Orders Over <span className='text-purple-500'>100$</span></h1>
-              <p className='text-slate-900 italic mt-2 line-clamp-2'>Free Shipping to First-Time Customers only, after Promotions and Discounts are applied.</p>
+              <p className='text-slate-900 italic mt-2 line-clamp-3'>Free Shipping to First-Time Customers only, after Promotions and Discounts are applied.</p>
               <div className='flex justify-center items-center bg-purple-400 px-2 py-1 mt-3 md:mt-5 rounded-lg text-white hover:bg-purple-500'>
                 <Link to="/products"><span className='text-lg '>Shop Now</span> <i className='fas fa-arrow-right mx-1'></i></Link>
               </div>

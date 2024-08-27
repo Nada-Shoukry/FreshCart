@@ -49,7 +49,7 @@ export function Navbar() {
 
       <div className="md:hidden flex justify-center">
         <button onClick={ () => setIsOpen(!isOpen) } className="outline-none mobile-menu-button">
-          <svg className="w-7 h-7 text-white mt-[3px]" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-7 h-7 text-white mt-[2px]" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
