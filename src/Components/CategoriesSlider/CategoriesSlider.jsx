@@ -70,7 +70,7 @@ export function CategoriesSlider() {
                 return <div key={index} className='cursor-pointer'>
                     <Link to={"/speccategory/" +category._id}>
                         <div className='flex flex-col justify-center items-center'>
-                           <div className='rounded-full overflow-hidden w-[120px] h-[120px] md:w-[180px] md:h-[180px] xl:h-[200px] xl:w-[200px]'>
+                           <div className='rounded-full overflow-hidden w-[115px] h-[115px] md:w-[180px] md:h-[180px] xl:h-[200px] xl:w-[200px] mx-[1px]'>
                               <img className='rounded-full w-full h-full object-cover hover:scale-110 transition-all' src={category.image} alt="freshcart categories slider imgs" />
                            </div>
                            <div>

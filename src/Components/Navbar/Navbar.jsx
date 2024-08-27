@@ -24,16 +24,16 @@ export function Navbar() {
   return (
   <>
   <header className="bg-gray-800 fixed top-0 w-full z-10">
-  <nav className="container mx-auto px-2 md:px-10 py-2">
+  <nav className="container mx-auto px-5 md:px-10 py-5">
 
     <div className="flex items-center justify-between">
      <div className='flex justify-between items-center'>
 
-      <div className="text-white text-2xl lg:text-3xl pe-2 md:pe-5 flex justify-center items-center mb-[5px]">
-        <div className='border-[3px] border-purple-400 p-1 rounded-full me-1 text-purple-500 bg-white'>
-          <i className="fa-solid fa-cart-shopping me-1"></i>
+      <div className="text-white text-2xl md:text-3xl pe-2 md:pe-5 flex justify-center items-center md:mb-[5px]">
+        <div className= 'me-[5px]'>
+          <i className="fa-solid fa-cart-shopping"></i>
         </div>
-        <NavLink to={"/"}><span className='font-bold'>FreshCart</span></NavLink>
+        <NavLink to={"/"}><span className='font-extrabold'>FreshCart</span></NavLink>
       </div>
 
       {userToken && <div className="hidden md:block navmenu">
@@ -49,7 +49,7 @@ export function Navbar() {
 
       <div className="md:hidden flex justify-center">
         <button onClick={ () => setIsOpen(!isOpen) } className="outline-none mobile-menu-button">
-          <svg className="w-7 h-7 text-white" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-7 h-7 text-white mt-[3px]" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>

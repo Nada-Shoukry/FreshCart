@@ -46,7 +46,7 @@ export function Home() {
     <div>
       <MainSlider />
       <CategoriesSlider />
-      <div className='grid grid-cols-4 gap-y-4 md:gap-4 mt-5 md:mx-10'>
+      <div className='grid grid-cols-4 gap-y-5 md:gap-4 mt-5 md:mx-10'>
         {products.map((product, index) => {
           return <Product key={index} product={product} />
         })}  
