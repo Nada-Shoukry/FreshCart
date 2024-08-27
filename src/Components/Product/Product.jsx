@@ -47,7 +47,7 @@ export default function Product({ product }) {
                   <button onClick={() => addProductToCart(product._id, userToken)} className="bg-white text-purple-600 border-[2px] border-purple-400 hover:text-white hover:bg-purple-500 transition-all focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm p-2 text-center dark:bg-purple-400 dark:hover:bg-purple-500 dark:focus:ring-purple-700">
                     <div className='flex justify-center items-center'>
                     <svg className="h-4 w-4" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                      <div className=''> Add to Cart</div>
+                      <div className='ms-[1px]'> Add to Cart</div>
                     </div>                     
                   </button>
 
