@@ -2,13 +2,16 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import { Bounce, toast } from 'react-toastify';
 import { AuthContext } from '../Contexts/AuthContext';
+import { CartContext } from '../Contexts/CartContext';
 
 export function CartProduct({product, setCart, cart}) {
 
     const [loadingIncrease, setLoadingIncrease] = useState(false)
     const [loadingDecrease, setLoadingDecrease] = useState(false)
 
-    const [productCount, setProductCount] = useState(product.count)
+    const [productCount, setProductCount] = useState(product.count);
+
+    const {cartItems, setCartItems} = useContext(CartContext);
 
 
     let {userToken}= useContext(AuthContext)
@@ -29,6 +32,7 @@ export function CartProduct({product, setCart, cart}) {
             }
         })
         setCart(data);
+        setCartItems(data.numOfCartItems);
         setLoadingIncrease(false)
         setLoadingDecrease(false)
 
@@ -50,7 +54,9 @@ export function CartProduct({product, setCart, cart}) {
           }
         })
     
-        setCart(data)
+        setCart(data);
+        setCartItems(data.numOfCartItems);
+
     
         toast.success("Product has been removed. ", {
           position: "top-right",

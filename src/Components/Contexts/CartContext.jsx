@@ -3,11 +3,11 @@ import { AuthContext } from "./AuthContext";
 import axios from "axios";
 
 
-export const CartContext = createContext(0);
+export const CartContext = createContext();
 
 export default function CartProvider({children}) {
 
-  const [cartItems, setCartItems] = useState();
+  const [cartItems, setCartItems] = useState(0);
 
     
   useEffect(() => {
@@ -23,13 +23,14 @@ export default function CartProvider({children}) {
         // token : userToken 
         token: localStorage.getItem("token")
       }
-    })
-    console.log(data.numOfCartItems);
+    });
+
+    // console.log(data.numOfCartItems);
     setCartItems(data.numOfCartItems);
   }
 
 
-    return <CartContext.Provider value={ {cartItems , setCartItems} }>
-        {children}
-    </CartContext.Provider>
+  return <CartContext.Provider value={ {cartItems , setCartItems} }>
+    {children}
+  </CartContext.Provider>
 }

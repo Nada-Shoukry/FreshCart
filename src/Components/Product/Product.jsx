@@ -10,7 +10,6 @@ export default function Product({ product }) {
 
   let {userToken} = useContext(AuthContext);
 
-  
   return (
     <>
         <div className="max-w-2xl mx-2 md:mx-0 col-span-4 md:col-span-2 lg:col-span-1">

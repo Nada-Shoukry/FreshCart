@@ -3,15 +3,17 @@ import { Bounce, toast } from "react-toastify";
 
 
 export async function addProductToCart(productId, userToken){
+
+
     let {data} = await axios.post("https://ecommerce.routemisr.com/api/v1/cart" , {
       productId : productId
     }, {
       headers: {
         token : userToken
       }
-    })
+    });
 
-    console.log(data);
+    // console.log(data);
 
     toast.success(data.message, {
       position: "top-right",
@@ -26,3 +28,4 @@ export async function addProductToCart(productId, userToken){
     });
 
   }
+

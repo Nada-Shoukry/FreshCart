@@ -7,13 +7,14 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import emptyCartImg from "/src/assets/images/emptycart1.png"
 import cartlogo from "/src/assets/images/cart.png"
+import { CartContext } from '../Contexts/CartContext';
 
 
 export function Cart() {
 
   const [isLoading, setIsLoading] = useState(true);
-
   const [cart, setCart] = useState(null);
+  const {cartItems, setCartItems} = useContext(CartContext);
 
   useEffect(() => {
     getUserCart()
@@ -32,7 +33,8 @@ export function Cart() {
       setIsLoading(false)
     })
 
-    setCart(data)
+    setCart(data);
+    setCartItems(data.numOfCartItems);
   }
 
   // async function clearCart(){
@@ -51,7 +53,9 @@ export function Cart() {
       }
     }).finally(() => {
       setCart(null)
-    })
+      setCartItems(0);
+
+    });
   }
 
   return (

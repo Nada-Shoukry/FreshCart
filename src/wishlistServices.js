@@ -11,7 +11,7 @@ export async function addProductToWishlist(productId, userToken) {
       }
     })
 
-    console.log(data);
+    // console.log(data);
 
     toast.success(data.message, {
       position: "top-right",
