@@ -65,7 +65,7 @@ export function Cart() {
  :
 
 <div>
-  {cart?.numOfCartItems? <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
+  {cart?.numOfCartItems? <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 min-h-96">
     <div className="rounded-lg md:w-2/3">
     {cart?.data.products.map((product, index) => {
       return <CartProduct key={index} product={product} setCart={setCart} cart={cart}/>
@@ -99,7 +99,7 @@ export function Cart() {
         <div className='absolute top-1 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full'>
             <h1 className=' text-xl font-bold text-center mt-8'>Your Cart is Empty</h1>
             <div className='felx items-center justify-center'>
-              <Link to={"/"} className='text-xl font-semibold hover:underline'>Home</Link>
+              <Link to={"/products"} className='text-xl font-semibold hover:underline'>Shop Now</Link>
               <i className='fas fa-arrow-circle-right text-blue-400 mx-1'></i>
             </div>
         </div>
