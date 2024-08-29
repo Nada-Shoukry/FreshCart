@@ -95,7 +95,7 @@ export function Cart() {
    </div>
    : 
     <div className='flex flex-col justify-start items-center w-full'>
-      <div className=' relative w-full h-[500px] -my-10   bg-white'>
+      <div className=' relative w-full h-[500px] -my-10 bg-white'>
         <div className='absolute top-1 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full'>
             <h1 className=' text-xl font-bold text-center mt-8'>Your Cart is Empty</h1>
             <div className='felx items-center justify-center'>
