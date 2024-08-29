@@ -65,7 +65,7 @@ export function Cart() {
  :
 
 <div>
-  {cart? <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
+  {cart?.numOfCartItems? <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
     <div className="rounded-lg md:w-2/3">
     {cart?.data.products.map((product, index) => {
       return <CartProduct key={index} product={product} setCart={setCart} cart={cart}/>
@@ -112,4 +112,7 @@ export function Cart() {
 }
 </>
 )}
+
+
+
 
