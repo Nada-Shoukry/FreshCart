@@ -24,7 +24,7 @@ export function Navbar() {
   return (
   <>
   <header className="bg-gray-800 fixed top-0 w-full z-10">
-  <nav className="container mx-auto px-5 md:px-10 py-5">
+  <nav className="container mx-auto px-5 md:px-10 py-4">
 
     <div className="flex items-center justify-between">
      <div className='flex justify-between items-center'>
