@@ -97,7 +97,7 @@ export function ProductDetails() {
                                 <h3>{productDetails?.brand.name}</h3>
                             </div>
                             
-                            <div className="flex items-center  mt-6 gap-y-1">
+                            <div className="flex items-center flex-wrap mt-6 gap-y-1">
 
                                 <button onClick={() => addProductToCart(productDetails._id, userToken)} className="me-2 px-1 py-2 bg-purple-500 text-white text-sm font-medium rounded-lg hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
                                     <div className='flex justify-center items-center'>
