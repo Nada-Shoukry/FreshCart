@@ -14,7 +14,7 @@ export default function Product({ product }) {
     <>
         <div className="max-w-2xl mx-2 md:mx-0 col-span-4 md:col-span-2 lg:col-span-1">
            <div className="relative bg-transparent shadow-md shadow-purple-400 hover:shadow-purple-600 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-              <div className='absolute top-0 left-0 border-[1px] text-sm px-1 border-purple-500 my-1 mx-5 rounded-md bg-white text-purple-700 hover:bg-purple-500 hover:text-white cursor-pointer'>{product.category.name}</div>
+              <div className='absolute top-0 left-0 border-[1px] text-sm px-1 border-purple-500 my-1 mx-5 rounded-md bg-purple-100 text-purple-700 hover:bg-purple-500 hover:text-white'>{product.category.name}</div>
               <Link to={"/productDetails/" +product.id}>
                 <img className="rounded-t-lg p-4" src={product.imageCover} alt="product image" />
               </Link>

@@ -62,13 +62,13 @@ export function ProductDetails() {
         <div className= "bg-transparent">
             <main className="py-10 ">
                 <div className="container px-16 mx-auto">
-                    <div className="md:flex md:items-center ">
-                        <div className="w-full md:w-6/12 lg:w-3/12 ">
+                    <div className="md:flex md:items-center gap-5">
+                        <div className="w-full md:w-6/12 lg:w-3/12">
                             <ProductSlider images={productDetails?.images} />
                         </div>
 
                         <div className="w-full max-w-lg mx-auto mt-5 md:ml-8 md:mt-0 md:w-6/12 lg:w-9/12">
-                            <h3 className="text-gray-700 uppercase text-lg">{productDetails?.title}</h3>
+                            <h3 className="text-gray-700 uppercase text-lg pt-5 md:pt-0">{productDetails?.title}</h3>
                             <span className="text-gray-500 mt-3">${productDetails?.price}</span>
                             <hr className="my-3" />
 
@@ -128,3 +128,5 @@ export function ProductDetails() {
   )
 
 }
+
+

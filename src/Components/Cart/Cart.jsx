@@ -74,7 +74,7 @@ export function Cart() {
     {cart?.data.products.map((product, index) => {
       return <CartProduct key={index} product={product} setCart={setCart} cart={cart}/>
       })}
-     <button onClick={() => clearCart()} className= 'mx-auto block w-full hover:text-purple-900 text-lg hover:bg-transparent border-2 border-purple-500 rounded-md py-2 px-4 bg-purple-500 text-white '>Clear Cart</button>
+     <button onClick={() => clearCart()} className= 'mx-auto block w-full hover:text-purple-900 text-lg hover:bg-transparent border-2 border-purple-500 rounded-md py-2 px-4 bg-purple-500 text-white focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-700'>Clear Cart</button>
     </div>
     
     <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3 ">
